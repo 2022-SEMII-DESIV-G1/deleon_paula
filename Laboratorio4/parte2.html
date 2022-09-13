@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Laboratorio 3.1</title>
+	<title>Laboratorio 4.2</title>
 </head>
 <body>
-<form name="formularioDatos" method="post"  onsubmit="console.log(1)">
-	<p> Laboratorio 4 </p>
-	<br/>
-	<label> Introduzca correo: </label> 
-    <input type="text" name="correo" value="">
-	<br/> <br/>
-    <label> Introduzca contrasena: </label> 
-    <input type="password" name="contraseña" value="">
-    <br/> <br/>
-	<input  value="Enviar" type="submit">
+<form id="formularioDatos" method="post" action="">
+    <p> Laboratorio 4</p>
+	<div>
+	<label for="correo">Correo: </label> 
+    <input type="text" id="correo" value="">
+    </div>
+    <div>
+    <label for="contraseña">Contraseña: </label> 
+    <input type="password" id="contraseña" value="">
+    </div>
+    <br>
+    <div>
+	<input type="submit" name="enviar" value="Enviar">
+    </div>
 </form>
+<script>
+    var form=document.getElementById('formularioDatos');{
+    function submitHandler(e) {
+    let correo = document.getElementById('correo').value;
+    console.log(correo);
+    e.preventDefault();
+    let contraseña = document.getElementById('contraseña').value;
+    console.log(contraseña);
+    e.preventDefault();
+}
+    }
+form.addEventListener("submit", submitHandler);
+</script>
 </body>
 </html> 
