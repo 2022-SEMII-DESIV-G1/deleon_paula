@@ -1,0 +1,23 @@
+.box{
+    border: 1px solid black;
+    padding: .5em;
+  }
+.t1{
+    color:#375e97;
+    font-family:georgia;
+}
+hr{
+    border-color: #375e97;
+}
+.t2{
+    color:#999999;
+}
+.t3{
+    font-family: arial;
+}
+.t4{
+    font-family: arial;
+}
+.link{
+    color:#fb6542;
+}
